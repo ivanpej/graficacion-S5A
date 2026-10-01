@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 4: Filtro OCR de Mapas de Bits</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f8fafc; }
+    canvas { border: 1px solid #94a3b8; margin: 20px; }
+    button { 
+      padding: 10px 20px; 
+      background: #0284c7; 
+      color: white; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
+      margin: 5px;
+    }
+    button:hover { background: #0369a1; }
+    button.active { background: #0f172a; }
+    .slider-container {
+      margin: 15px auto;
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Procesamiento de Comprobantes Aduanales (Matriz de Píxeles)</h2>
+  <canvas id="lienzoImagen" width="400" height="300"></canvas>
+  
+  <div class="slider-container">
+    <label for="sliderUmbral">Ajuste / Umbral: <span id="valUmbral">128</span></label>
+    <input type="range" id="sliderUmbral" min="0" max="255" value="128">
+  </div>
+
+  <br>
+  <button id="btnGris">1. Escala de Grises</button>
+  <button id="btnUmbral">2. Binarizar (OCR)</button>
+  <button id="btnReset">Resetear Imagen</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

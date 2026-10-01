@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica 3 algoritmo dda</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            background: #e2e8f0;
+        }
+
+        canvas {
+            background: #fff;
+            cursor: crosshair;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #475569;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>renderizado bajo nivel</h2>
+    <p>da clic en dos puntos diferentes del lienzo para trazar una linea pixel por pixel</p>
+    <canvas id="lienzoDDA" width="600" height="400"></canvas>
+    <br>
+
+    <button onclick="limpiarLienzo()" style="padding: 10px 20px; cursor: pointer;">limpiar lienzo</button>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
